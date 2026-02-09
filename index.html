@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TrendFashion - Tendencias de Moda</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header>
+<h1>🔥 TrendFashion</h1>
+<p>Descubre las tendencias juveniles más actuales</p>
+</header>
+
+
+<div class="filters">
+<button class="filter-btn active" onclick="filterCategory('all', this)">Todas</button>
+<button class="filter-btn" onclick="filterCategory('streetwear', this)">Streetwear</button>
+<button class="filter-btn" onclick="filterCategory('gym', this)">Gym</button>
+<button class="filter-btn" onclick="filterCategory('formal', this)">Formal</button>
+</div>
+
+
+<div class="container" id="trendContainer"></div>
+
+
+<div class="modal" id="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<img id="modalImg" />
+<h2 id="modalTitle"></h2>
+<p id="modalDesc"></p>
+<a id="modalLink" target="_blank">Ver referencia</a>
+</div>
+</div>
+
+
+<footer>
+<p>TrendFashion © 2026 - Moda Juvenil</p>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
